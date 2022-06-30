@@ -16,7 +16,7 @@ create-dev-cluster: iam-policy.json
 
 bootstrap-flux2-dev:
 	@flux bootstrap github \
-		--owner=$(GITHUB_USER) \
+		--owner=DaSmoo \
   		--repository=hands-on-flux2 \
   		--branch=env/dev \
   		--path=./clusters/flux2-dev-cluster \
@@ -35,7 +35,7 @@ create-prod-cluster: iam-policy.json
 
 bootstrap-flux2-prod:
 	@flux bootstrap github \
-		--owner=$(GITHUB_USER) \
+		--owner=DaSmoo \
   		--repository=hands-on-flux2 \
   		--branch=env/prod \
   		--path=./clusters/flux2-prod-cluster \
